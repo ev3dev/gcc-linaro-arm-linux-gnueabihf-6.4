@@ -1,5 +1,5 @@
 #!/bin/sh
-# preinst script for gcc-linaro-arm-linux-gnueabihf-4.9
+# preinst script for gcc-linaro-arm-linux-gnueabihf-5.2
 #
 # see: dh_installdeb(1)
 
@@ -17,13 +17,13 @@ set -e
 case "$1" in
     install|upgrade)
         download_file=$(tempfile)
-        wget -O ${download_file} https://releases.linaro.org/14.09/components/toolchain/binaries/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux.tar.xz
-        tar -C /usr/lib/i386-linux-gnu -xJf ${download_file}
+        wget -O ${download_file} https://releases.linaro.org/components/toolchain/binaries/5.2-2015.11/arm-linux-gnueabihf/gcc-linaro-5.2-2015.11-x86_64_arm-linux-gnueabihf.tar.xz
+        tar -C /usr/lib/x86_64-linux-gnu -xJf ${download_file}
         rm ${download_file}
     ;;
 
     abort-upgrade)
-        rm -rf /usr/lib/i386-linux-gnu/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux
+        rm -rf /usr/lib/x86_64-linux-gnu/gcc-linaro-5.2-2015.11-x86_64_arm-linux-gnueabihf
     ;;
 
     *)
