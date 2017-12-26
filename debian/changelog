@@ -1,5 +1,5 @@
-gcc-linaro-arm-linux-gnueabihf-5.2 (2015.11) trusty; urgency=low
+gcc-linaro-arm-linux-gnueabihf-6.4 (2017.11) trusty; urgency=low
 
   * Initial Release.
 
- -- David Lechner <david@lechnology.com>  Thu, 14 Jan 2016 19:59:58 -0600
+ -- David Lechner <david@lechnology.com>  Tue, 26 Dec 2017 16:11:09 -0600

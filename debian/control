@@ -1,16 +1,16 @@
-Source: gcc-linaro-arm-linux-gnueabihf-5.2
+Source: gcc-linaro-arm-linux-gnueabihf-6.4
 Section: devel
 Priority: extra
 Maintainer: David Lechner <david@lechnology.com>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.5
 Homepage: https://wiki.linaro.org/WorkingGroups/ToolChain
-Vcs-Git: git://github.com/ev3dev/gcc-linaro-arm-linux-gnueabihf-5.2.git
-Vcs-Browser: http://github.com/ev3dev/gcc-linaro-arm-linux-gnueabihf-5.2
+Vcs-Git: https://github.com/ev3dev/gcc-linaro-arm-linux-gnueabihf-6.4.git
+Vcs-Browser: http://github.com/ev3dev/gcc-linaro-arm-linux-gnueabihf-6.4
 
-Package: gcc-linaro-arm-linux-gnueabihf-5.2
+Package: gcc-linaro-arm-linux-gnueabihf-6.4
 Architecture: amd64
 Depends: ${misc:Depends}
 Description: Downloads and installs cross-build toolchain from Linaro.
- The toolchain is published in binary format, so this package just downloads
- and installs it to /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-5.2.
+ The toolchain is published in binary format, so this package just downloads and
+ installs it to /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4.

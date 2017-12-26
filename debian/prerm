@@ -1,5 +1,5 @@
 #!/bin/sh
-# prerm script for gcc-linaro-arm-linux-gnueabihf-5.2
+# prerm script for gcc-linaro-arm-linux-gnueabihf-6.4
 #
 # see: dh_installdeb(1)
 
@@ -19,7 +19,7 @@ set -e
 
 case "$1" in
     remove|upgrade|deconfigure)
-	rm -rf /usr/lib/x86_64-linux-gnu/gcc-linaro-5.2-2015.11-x86_64_arm-linux-gnueabihf
+	rm -rf /usr/lib/x86_64-linux-gnu/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf
     ;;
 
     failed-upgrade)
